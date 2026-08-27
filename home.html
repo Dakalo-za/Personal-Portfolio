@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="responsive screen.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <nav id="web-nav">
+        <div class="logo">Mojora Dakalo Mulaudzi</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Experience">Experience</a></li>   
+            <li><a href="#contact">Contact</a></li>   
+        </ul>
+    </nav>
+    <nav id="burger-nav">
+        <div class="logo">Mojora Dakalo Mulaudzi</div>
+        <div class="burger-menu">
+            <div class="burger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+               <li><a href="#home.profile-container" onclick="toggleMenu()">Home</a></li>
+               <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+               <li><a href="#Experience.html" onclick="toggleMenu()">Experience</a></li>
+               <li><a href="#contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="profile-container">
+            <img src="Profile Picture.jpeg" alt="Profile-pic">
+        </div>  
+        <div class="text">
+            <h1 class="name">Mojora Dakalo Mulaudzi</h1>
+            <p class="text__p1">Aspiring Software Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color" onclick="window.open('Dakalo_Mulaudzi_CV.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
+            </div>
+            <div id="socials-container">
+                <i class="fa-brands fa-linkedin" onclick="location.href='www.linkedin.com/in/mojora-mulaudzi-45aa9a270'"></i>
+                <i class="fa-brands fa-github" onclick="location.href='https://github.com/Dakalo-za'"></i>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="about__details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h3>Education</h3>
+                    <p>BSc in Information Technology<br>Software Engineering</p>
+                </div>
+            </div>
+            <div class="text_container">
+                <p>I’m a software engineering graduate who enjoys turning ideas into practical websites and applications. <br>
+                Through my academic and personal projects, I’ve gained hands-on experience with HTML, CSS, JavaScript and Python. <br>
+                I’m eager to begin my career, contribute to meaningful projects and continue growing as a developer.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="text__p1">Browse Projects</p>
+        <h1 class="title">Projects</h1>
+        <div class="project-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="infinitygadgets.png" alt="InfinityGadgets" class="project-img">
+                </div>
+                <h2 class="sub-title project-title">InfinityGadgets</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/Dakalo-za/InfinityGadgets'">Github</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="TodoList.png" alt="Todo" class="project-img">
+                </div>
+                <h2 class="sub-title project-title">TodoList</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/Dakalo-za/TodoList'">Github</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="email.png" alt="email" class="icon contact-icon">
+                <p><a href="mailto:mulaudzimojora523@gmail.com">mulaudzimojora523@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                  <li><a href="profile-container">Home</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#Experience">Experience</a></li>   
+                  <li><a href="#contact">Contact</a></li>   
+                 </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2026 Mojora Dakalo Mulaudzi</p>
+    </footer>
+  <script src="home.js"></script>
+</body>
+</html>

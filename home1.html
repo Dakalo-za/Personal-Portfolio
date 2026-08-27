@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="responsive screen.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <nav id="web-nav">
+        <div class="logo">Mojora Dakalo Mulaudzi</div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="Experience.html">Experience</a></li>
+        </ul>
+    </nav>
+    <nav id="burger-nav">
+        <div class="logo">Mojora Dakalo Mulaudzi</div>
+        <div class="burger-menu">
+            <div class="burger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+               <li><a href="home.html" onclick="toggleMenu()">Home</a></li>
+               <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+               <li><a href="Experience.html" onclick="toggleMenu()">Experience</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="mypic">
+        <img src="Profile Picture.jpeg" alt="Profile picture">
+        <h2>Aspiring Software Engineer</h2>
+        <p>I’m a software engineering graduate who enjoys turning ideas into practical websites and applications. <br>
+            Through my academic and personal projects, I’ve gained hands-on experience with HTML, CSS, JavaScript and Python. <br>
+            I’m eager to begin my career, contribute to meaningful projects and continue growing as a developer.
+        </p>
+
+        <div class="social">
+            <a href="https://github.com/Dakalo-za">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="www.linkedin.com/in/mojora-mulaudzi-45aa9a270">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="CV">
+        <img src="cv.png" alt="My CV">
+        <button><a href="Dakalo_Mulaudzi_CV.pdf" download>Download CV</a></button>
+    </section>
+
+    <section class="education">
+        <div class="Heading">
+            <h1>Education</h1>
+            <p>My Journey</p>
+        </div>
+
+        <div class="timeline">
+            <div class="checkpoint">
+                <h2>Primary School: Halfway House Primary</h2>
+                <p>2011 - 2017</p>
+            </div>
+
+            <div class="checkpoint">
+                <h2>High School: Midrand High School</h2>
+                <p>2018 - 2022</p>
+            </div>
+
+            <div class="checkpoint">
+                <h2>University: Eduvos</h2>
+                <p>2023 - 2026</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stack">
+        <h1>My Stack</h1>
+        <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-python"></i>
+            <i class="fa-brands fa-github"></i>
+    </section>
+
+    <section class="projects">
+        <h1>Projects</h1>
+        <div class="infi">
+            <img src="infinitygadgets.png" alt="InfinityGadgets">
+            <button type="button" id="previewButton">Preview</button>
+        </div>
+
+        <dialog id="infimodal">
+            <button type="button" id="closeButton" class="close-button">&times;</button>
+            <img src="infinitygadgets.png" alt="InfinityGadgets preview">
+            <h2>InfinityGagets Website</h2>
+            <p>InfinityGadgets is an ecommerce website that sells tech products.<br>
+               It includes products such as gaming console, PCs, controllers, games, Graphics cards etc.<br>
+               Structure: <br>
+               HTML for the structure of the website<br>
+               CSS for styling the website<br>
+               JavaScript for website logic<br>
+               PHP for storing user logins to the database
+            </p>
+        </dialog>
+
+
+        <div class="eeets">
+            <img src="eeets1.png" alt="Eeets">
+            <button type="button" id="previewButton">Preview</button>
+        </div>
+
+        <dialog id="eeetsmodal">
+            <button type="button" id="closeButton" class="close-button">&times;</button>
+            <img src="eeets1.png" alt="Eeets preview">
+            <h2>Eeets Fast Food Restuarant Website</h2>
+            <p>Eeets is a fast food restuarant that sells fast foods, sodas and desserts<br>
+               Structure: <br>
+               HTML was used for the structure of the webpage<br>
+               CSS was used to style the webpage 
+            </p>
+        </dialog>
+
+        <div class="todo">
+            <img src="TodoList.png" alt="TodoList">
+            <button type="button" id="previewButton">Preview</button>
+        </div>
+
+        <dialog id="todomodal">
+            <button type="button" id="closeButton" class="close-button">&times;</button>
+            <img src="TodoList.png" alt="TodoLiist preview">
+            <h2>Todolist</h2>
+            <p>This a todolist that adds objectives or goals that an individual may want to achieve<br>
+               I used html to structure the todo and styles it using css.<br>
+               JavaScript was used to handle backend tasks such and adding and removing objectives/goals<br>
+               Javascript was also used to store these objectives/goals to the localstarage 
+            </p>
+        </dialog>
+    </section>
+    <script src="home.js"></script>
+</body>
+</html>
